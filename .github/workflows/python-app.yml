@@ -44,9 +44,13 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with unittest for coverage
       run: |
-        cd tests
-        PYTHONPATH=../app coverage run --omit="../../app/console_io.py" --source="../../app" -m unittest
+        cd tests/unit
+        PYTHONPATH=../../app coverage run --omit="../../app/console_io.py" --source="../../app" -m unittest
     - name: Test coverage
       run: |
-        cd tests
-        PYTHONPATH=../app coverage report -m --fail-under=90
+        cd tests/unit
+        coverage report -m --fail-under=90
+    - name: Integration tests
+      run: |
+        cd tests/integration
+        python -m unittest integration_test.py
