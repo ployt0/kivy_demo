@@ -1,3 +1,5 @@
+![python-app workflow](https://github.com/ployt0/kivy_demo/actions/workflows/python-app.yml/badge.svg)
+
 To run from Linux, see [the github workflow](.github/workflows/python-app.yml).
 
 To run from Windows, which I do worryingly much now:
