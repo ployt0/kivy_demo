@@ -1,0 +1,6 @@
+.idea
+
+tests/integration/test-quotes_slimmed.json
+.coverage
+__pycache__
+venv
