@@ -50,7 +50,12 @@ jobs:
       run: |
         cd tests/unit
         coverage report -m --fail-under=90
+    - name: Example run
+      run: |
+        python app/kaggle_normaliser.py random10 tests/integration/test-quotes.json
+        python app/kaggle_normaliser.py csv tests/integration/test-quotes.json
     - name: Integration tests
       run: |
         cd tests/integration
+        # This runs it the third way by providing simulated input decisions:
         PYTHONPATH=../../app python -m unittest integration_test.py

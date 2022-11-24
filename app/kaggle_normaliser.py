@@ -4,8 +4,8 @@ The quotes are on trend, but hideously malformed.
 
 https://www.gutenberg.org/files/48105/ should be considered, it's probably more inspiring.
 
-cd C:/Users/demo/PycharmProjects/kivy_demo
-python app/kaggle_normaliser.py C:/Users/demo/PycharmProjects/kivy_demo/quotes.json
+cd C:/Users/demo/PycharmProjects/quotations_w_unittest
+python app/kaggle_normaliser.py all tests/integration/test-quotes.json
 """
 import csv
 import json
