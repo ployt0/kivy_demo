@@ -53,4 +53,4 @@ jobs:
     - name: Integration tests
       run: |
         cd tests/integration
-        python -m unittest integration_test.py
+        PYTHONPATH=../../app python -m unittest integration_test.py
