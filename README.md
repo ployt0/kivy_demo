@@ -43,7 +43,7 @@ The default output is a json list of quote: author pairs. Duplicates get removed
 
 ## Usage
 
-Here is what we should do (taken from [kaggle_normaliser.py](app/kaggle_normaliser.py)):
+Just in case anyone actually wants to try and get some quotation, this is what we should do (taken from [kaggle_normaliser.py](app/kaggle_normaliser.py)):
 
 ```shell
 cd C:/Users/<<user_name>>/PycharmProjects/quotations_w_unittest
@@ -51,3 +51,7 @@ python app/kaggle_normaliser.py all tests/integration/test-quotes.json
 ```
 
 We run that in the test/workflow pipeline. The `all` method must be tested manually or through a test harness because it requires user input (usually quitting).
+
+
+https://user-images.githubusercontent.com/25666053/203922336-263d7030-9e7b-4e30-8519-b74980c0f288.mp4
+
