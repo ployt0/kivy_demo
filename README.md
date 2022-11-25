@@ -7,7 +7,7 @@ To run from Linux, see [the github workflow](.github/workflows/python-app.yml).
 To run from Windows, which I do worryingly much now:
 
 ```shell
-set PYTHONPATH=C:\Users\user_name\PycharmProjects\project_name\app;%PYTHONPATH%
+set PYTHONPATH=C:\Users\<<user_name>>\PycharmProjects\quotations_w_unittest\app;%PYTHONPATH%
 cd tests/unit
 coverage run --omit="../../app/console_io.py" --source="../../app" -m unittest
 coverage report -m --fail-under=90
@@ -46,7 +46,7 @@ The default output is a json list of quote: author pairs. Duplicates get removed
 Here is what we should do (taken from [kaggle_normaliser.py](app/kaggle_normaliser.py)):
 
 ```shell
-cd C:/Users/demo/PycharmProjects/quotations_w_unittest
+cd C:/Users/<<user_name>>/PycharmProjects/quotations_w_unittest
 python app/kaggle_normaliser.py all tests/integration/test-quotes.json
 ```
 
