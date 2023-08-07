@@ -1,4 +1,4 @@
-![python-app workflow](https://github.com/ployt0/quotations_w_unittest/actions/workflows/python-app.yml/badge.svg)
+![python-app workflow](https://github.com/ployt0/quotations_w_unittest/actions/workflows/python-app.yml/badge.svg) [![codecov](https://codecov.io/github/ployt0/quotations_w_unittest/branch/master/graph/badge.svg?token=QB9IXGWLBA)](https://codecov.io/github/ployt0/quotations_w_unittest)
 
 ## Running
 
