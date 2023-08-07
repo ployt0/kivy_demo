@@ -53,6 +53,7 @@ jobs:
       run: |
         cd tests/unit
         coverage report -m --fail-under=90
+        coverage json
     - name: Example run
       run: |
         python app/kaggle_normaliser.py random10 tests/integration/test-quotes.json
